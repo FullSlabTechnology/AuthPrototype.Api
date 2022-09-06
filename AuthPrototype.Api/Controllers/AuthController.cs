@@ -50,11 +50,17 @@ namespace AuthPrototype.Api.Controllers
             return Ok(result);
         }
 
+        // Remove does not work correctly
         [Authorize]
         [HttpGet("user")]
         public async Task<IActionResult> GetUser()
         {
-            return Ok(HttpContext.User);
+            var result = HttpContext.User;
+            return Ok(new
+            {
+                UserName = result.Identity?.Name ?? "",                
+                IsAuthenticated = result.Identity?.IsAuthenticated ?? false
+            });
         }
     }
 }
