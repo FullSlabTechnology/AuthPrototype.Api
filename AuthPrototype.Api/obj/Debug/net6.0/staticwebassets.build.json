@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "vseVbPBNBXNpJ1IqqxWqCH32lxo6ouJFdTGzNEW7pFA=",
+  "Source": "AuthPrototype.Api",
+  "BasePath": "_content/AuthPrototype.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
